@@ -1,0 +1,83 @@
+.name_link {
+    color: black;
+    font-size: 36px;
+    font-weight: 800;
+    justify-content: right;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 120px;
+    transition: .2s;
+}
+
+.name_link:hover {
+    color: rgba(255, 115, 0, 0.616);
+    font-size: 64px;
+}
+
+.note_wrapper {
+    flex-direction: row;
+    display: flex;
+    width: 1000px;
+    gap: 20px;
+}
+
+.note {
+    padding: 20px;
+    position: relative;
+    resize: none;
+    scrollbar-width: none;
+    background-image: linear-gradient(to bottom, rgb(248, 224, 160), rgb(245, 235, 207));
+    opacity: .9;
+    color: rgb(44, 33, 2);
+    border-color: rgba(32, 32, 32, 0.708);
+    border-width: 10px;
+    text-indent: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight:bold;
+    border-radius: 50px;
+    width: 300px;
+    height: 200px;
+    transition:.2s;
+    left: 0;
+}
+
+#note_1:hover {
+    height: 400px;
+    width: 400px;
+}
+#note_2:hover {
+    height: 400px;
+    width: 400px;
+}
+#note_3:hover {
+    height: 400px;
+    width: 400px;
+}
+
+.name_wrapper {
+    display: flex;
+    width: 500px;
+    position: relative;
+}
+
+.tab {
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 24px;
+    transition: .2s;
+}
+
+.tab:hover {
+    font-size: 32px;
+}
+
+.tab_wrapper {
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    width: 500px;
+    position: relative;
+    gap: 40px;
+}
