@@ -1,5 +1,5 @@
 import './style.css';
-import * as THREE from 'three';
+import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.186.1/three.tsl.js";
 
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
