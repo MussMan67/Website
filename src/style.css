@@ -29,17 +29,22 @@
     background-image: linear-gradient(to bottom, rgb(248, 224, 160), rgb(245, 235, 207));
     opacity: .9;
     color: rgb(44, 33, 2);
-    border-color: rgba(32, 32, 32, 0.708);
-    border-width: 10px;
+    border-color: rgba(167, 126, 50, 0.792);
+    border-width: 15px;
     text-indent: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight:bold;
-    border-radius: 50px;
+    border-radius: 30px;
+    border-style:groove;
     width: 300px;
     height: 200px;
     transition:.2s;
     left: 0;
+}
+
+.note:hover {
+    text-shadow: 5px 5px 10px rgba(235, 180, 69, 0.767);
 }
 
 #note_1:hover {
@@ -47,10 +52,12 @@
     width: 400px;
 }
 #note_2:hover {
+    text-shadow: 5px 5px 10px rgba(255, 115, 0, 0.616);
     height: 400px;
     width: 400px;
 }
 #note_3:hover {
+    text-shadow: 5px 5px 10px rgba(255, 115, 0, 0.616);
     height: 400px;
     width: 400px;
 }
@@ -70,6 +77,8 @@
 }
 
 .tab:hover {
+    color: rgb(200, 206, 212);
+    text-shadow: 5px 5px 10px rgba(255, 115, 0, 0.616);
     font-size: 32px;
 }
 

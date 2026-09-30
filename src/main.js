@@ -46,9 +46,10 @@ let angle = 0;
 import {
   CSS2DRenderer,
   CSS2DObject,
-} from 'three/examples/jsm/renderers/CSS2DRenderer';
+} from 'three/addons/renderers/CSS2DRenderer.js';
 const labelRenderer = new CSS2DRenderer();
 labelRenderer.setSize(window.innerWidth, window.innerHeight);
+
 document.body.appendChild(labelRenderer.domElement);
 labelRenderer.domElement.style.position = 'absolute';
 labelRenderer.domElement.style.top = '0px';
@@ -96,20 +97,23 @@ name_wrapperObject.position.z = -170;
 const tab_wrapper = document.createElement('wrapper');
 tab_wrapper.className = 'tab_wrapper';
 
-const tab_resume = document.createElement('p');
+const tab_resume = document.createElement('a');
 tab_resume.innerHTML = "RESUME";
+tab_resume.setAttribute("href", "./resume.html");
 tab_resume.className = 'tab';
 tab_wrapper.appendChild(tab_resume);
 
-const tab_about = document.createElement('p');
+const tab_about = document.createElement('a');
 tab_about.innerHTML = "ABOUT";
+tab_about.setAttribute("href", "./about.html");
 tab_about.className = 'tab';
 tab_wrapper.appendChild(tab_about);
 
-const tab_home = document.createElement('p');
-tab_home.innerHTML = "HOME";
-tab_home.className = 'tab';
-tab_wrapper.appendChild(tab_home);
+const tab_blog = document.createElement('a');
+tab_blog.innerHTML = "BLOG";
+tab_blog.setAttribute("href", "./blog.html");
+tab_blog.className = 'tab';
+tab_wrapper.appendChild(tab_blog);
 
 const tab_wrapperObject = new CSS2DObject(tab_wrapper);
 tab_wrapperObject.position.x = 150;
@@ -119,11 +123,13 @@ scene.add(note_wrapperObject);
 scene.add(name_wrapperObject);
 scene.add(tab_wrapperObject);
 
+const starting_angle = -Math.PI * Math.random();
+
 function animate() {
   // required if controls.enableDamping or controls.autoRotate are set to true
 	controls.update();
 	renderer.render( scene, camera );
-  model.rotation.set(Math.PI/4, 0, -Math.PI/2 + angle);
+  model.rotation.set(Math.PI/4, 0, starting_angle + angle);
   angle += (Math.PI / 800);
   labelRenderer.render(scene, camera);
 }
@@ -138,3 +144,4 @@ window.addEventListener('resize', function () {
 
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
