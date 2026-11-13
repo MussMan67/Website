@@ -1,8 +1,8 @@
 .name_link {
-    color: black;
-    font-size: 36px;
+    color: rgba(0, 0, 0, 0.656);
+    font-size: 60px;
     font-weight: 800;
-    justify-content: right;
+    justify-content: center;
     position: absolute;
     margin-top: 120px;
     margin-left: 120px;
@@ -11,7 +11,7 @@
 
 .name_link:hover {
     color: rgba(255, 115, 0, 0.616);
-    font-size: 64px;
+    font-size: 72px;
 }
 
 .note_wrapper {
@@ -36,7 +36,7 @@
     font-size: 16px;
     font-weight:bold;
     border-radius: 30px;
-    border-style:groove;
+    border-style:double;
     width: 300px;
     height: 200px;
     transition:.2s;
@@ -45,6 +45,13 @@
 
 .note:hover {
     text-shadow: 5px 5px 10px rgba(235, 180, 69, 0.767);
+}
+
+.note_title {
+    color: rgb(44, 33, 2);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight:bold;
 }
 
 #note_1:hover {
