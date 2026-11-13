@@ -98,19 +98,19 @@ tab_wrapper.className = 'tab_wrapper';
 
 const tab_resume = document.createElement('a');
 tab_resume.innerHTML = "RESUME";
-tab_resume.setAttribute("href", "resume/index.html");
+tab_resume.setAttribute("href", "src/resume/index.html");
 tab_resume.className = 'tab';
 tab_wrapper.appendChild(tab_resume);
 
 const tab_about = document.createElement('a');
 tab_about.innerHTML = "ABOUT";
-tab_about.setAttribute("href", "about/index.html");
+tab_about.setAttribute("href", "src/about/index.html");
 tab_about.className = 'tab';
 tab_wrapper.appendChild(tab_about);
 
 const tab_blog = document.createElement('a');
 tab_blog.innerHTML = "BLOG";
-tab_blog.setAttribute("href", "blog/index.html");
+tab_blog.setAttribute("href", "src/blog/index.html");
 tab_blog.className = 'tab';
 tab_wrapper.appendChild(tab_blog);
 
